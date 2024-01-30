@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suri Problem-Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="title.png" type="image/x-icon">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color:#edede9;
+        color: #e26d5c;
+        font-family: "Poppins", sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        align-items: center;
+        background-color: #e26d5c;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        display: flex;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #edede9;
+      }
+      nav ul li a:hover {
+        color: #dbdbd6;
+        font-size: 1.01em;
+      }
+      .left {
+        font-size: 1.5rem;
+        color:#edede9;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+      }
+      .button{
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 40px;
+          padding: 0px 20px;
+        
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2.5rem;
+      }
+      .leftsection .btns {
+        width:40%;
+        background: #364156;
+        color: #edede9;
+        border: 3px solid #edede9;
+        font-size: 20px;
+        padding: 11px 6px;
+        border-radius: 10px;
+        cursor:pointer;
+      }
+      main hr {
+        border: 0;
+        background: #364156;
+        height: 1.02px;
+        margin: 80px 84px;
+      }
+      .rightsection {
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .rightsection img {
+        width: 90%;
+      }
+      .yellow {
+        color: #364156;
+      }
+      #element {
+        color: #364156;
+      }
+      .text-gray {
+        color: #364156;
+      }
+      .secondsection .box {
+        background: #364156;
+        width: 80vw;
+        height: 4px;
+        margin: 80px 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      .secondsection .vertical {
+        background:#364156;
+        height: 93px;
+        width: 4px;
+      }
+      .vertical-img {
+        height: 60px;
+        position: relative;
+        top: -65px;
+        left: -26px;
+      }
+      .vertical-title {
+        position: relative;
+        width: 157px;
+        top: 35px;
+        left: -30px;
+        font-size: 2.2rem;
+      }
+      .vertical-desc {
+        position: relative;
+        width: 200px;
+        color: #364156;
+        top: 45px;
+        left: -29px;
+      }
+      footer {
+        margin-top: 150px;
+        margin-bottom: 0;
+        height: 260px;
+        background-color: #364156;
+        color:#edede9;
+      }
+      .footer {
+        display: flex;
+        padding: 50px 20px;
+        justify-content: space-evenly;
+      }
+      .footer > div {
+        width: 180px;
+      }
+      .footer ul li{
+        list-style: none;
+      }
+      .footer-text-center {
+        text-align: center;
+        color: #edede9;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Suri's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi my name is <span class="yellow">Akash</span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btns">Download Resume</button>
+            <button class="btns">Visit GitHub</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg2.svg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <div class="secondsection">
+        <span class="text-gray">What i have learn't so far</span>
+        <h1>The Skill Armoury</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="html.png" alt="" class="vertical-img" />
+            <div class="vertical-title">Html</div>
+            <div class="vertical-desc">
+              HTML, or Hypertext Markup Language, serves as the fundamental
+              language for structuring content on the internet. It employs tags
+              to define various elements within a document, including headings,
+              paragraphs, images, and links.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="css.png" alt="" class="vertical-img" />
+            <div class="vertical-title">Css</div>
+            <div class="vertical-desc">
+              CSS, or Cascading Style Sheets, is a styling language used in
+              conjunction with HTML to enhance the visual presentation of
+              webpages. It enables the separation of content and design by
+              defining styles for HTML elements, such as colors, fonts, spacing,
+              and layout.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="c++.png" alt="" class="vertical-img" style="top: -70px" />
+            <div class="vertical-title">C++</div>
+            <div class="vertical-desc">
+              C++ is a powerful, versatile programming language, an extension of
+              C, featuring object-oriented programming and efficient memory
+              control, widely used for diverse software development.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="python.png" alt="" class="vertical-img" />
+            <div class="vertical-title">Python</div>
+            <div class="vertical-desc">
+              Python is a high-level, versatile programming language known for
+              its simplicity and readability. It emphasizes code readability and
+              ease of use, making it widely adopted for diverse applications,
+              from web development to artificial intelligence.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="first-section">
+          <h3>Suri's Portfolio website</h3>
+        </div>
+        <div class="second-section">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Service's</li>
+          </ul>
+        </div>
+        <div class="third-section">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Service's</li>
+          </ul>
+        </div>
+        <div class="fourth-section">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Service's</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-text-center">
+        suri-portfolio &#169; | All Right's Reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Problem Solver",
+          "C++ Programmer",
+          "Python Programmer",
+        ],
+        typeSpeed: 50,
+        backspeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
